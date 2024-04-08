@@ -1,2 +1,3 @@
 # MyReactProject
-This is basic project of React.js
+This is a basic project of React.js
+

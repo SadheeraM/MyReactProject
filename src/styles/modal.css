@@ -1,0 +1,44 @@
+/* Modal styles */
+.modal {
+    position: fixed; /* Position the modal relative to the viewport */
+    left: 50%;
+    top: 50%;
+    width: auto; /* Full width */
+    height: auto; /* Full height */
+    background-color: #656c6c; /* Semi-transparent black background */
+    z-index: 1000; /* Ensure the modal appears on top of other content */
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    background-color: #fefefe; /* White background */
+    margin: auto; /* Center the modal vertically */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    width: 650px; /* Full width */
+    height: 550px; /* Full height */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Transition effect for the modal */
+.modal-content {
+    animation-name: modalopen;
+    animation-duration: 0.5s;
+}
+
+@keyframes modalopen {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

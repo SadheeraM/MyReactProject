@@ -1,0 +1,190 @@
+header h1 {
+    margin: 0;
+}
+
+/* Main.styles */
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: #333;
+}
+
+/* Footer.styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.panel {
+    width: auto;
+    height: 250px;
+    top: 83px;
+    left: 0;
+    background-color: #656c6c;
+    padding: 20px;
+    display: flex;
+}
+
+.panel h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.panel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel ul li {
+    margin-bottom: 10px;
+}
+
+.panel ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.panel ul li a:hover {
+    color: #007bff;
+}
+
+.main-content {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    max-width: 1000px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.tile {
+    /*border: 1px solid #ccc;*/
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    margin: auto;
+}
+
+.tile:hover {
+    background-color: #c0c7c7;
+}
+
+.tile img {
+    width: 150px;
+    height: 200px;
+}
+
+.tile h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.tile p {
+    margin-bottom: 0;
+}
+
+header {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center items vertically */
+    background-color: #4c5fe7;
+    color: #fff;
+    padding: 20px;
+    width: auto;
+}
+
+/* Style for the search bar container */
+.search-bar {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center;/* Center items vertically */
+}
+
+/* Style for the search input */
+.search-bar input[type="text"] {
+    padding: 8px; /* Add padding for better spacing */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    margin-right:5px;/*dd margin to separate input and button */
+    width: 500px; /* Set the width of the input field */
+}
+
+/* Style for the search button */
+.search-bar button {
+    padding: 8px 12px; /* Add padding for better spacing */
+    border: 1px solid #007bff; /* Add border for visual separation */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    background-color: #0b86ea; /* Set background color for button */
+    color: white; /* Set text color for button */
+    cursor: pointer; /* Add pointer cursor for better UX */
+    width: 80px; /* Set the width of the input field */
+    margin-right:5px;
+}
+
+/* Style for the search button on hover */
+.search-bar button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Modal styles */
+.modal {
+    position: fixed; /* Position the modal relative to the viewport */
+    left: 50%;
+    top: 50%;
+    width: auto; /* Full width */
+    height: auto; /* Full height */
+    background-color: #656c6c; /* Semi-transparent black background */
+    z-index: 1000; /* Ensure the modal appears on top of other content */
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    background-color: #fefefe; /* White background */
+    margin: auto; /* Center the modal vertically */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    width: 650px; /* Full width */
+    height: 550px; /* Full height */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Transition effect for the modal */
+.modal-content {
+    animation-name: modalopen;
+    animation-duration: 0.5s;
+}
+
+@keyframes modalopen {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
